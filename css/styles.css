@@ -892,6 +892,7 @@ button
     border-radius: 4px;
     
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .radio-btn:hover
@@ -1045,13 +1046,10 @@ button
     top: 0px;
     opacity: 1;
     visibility: visible;
-    
-    
-    
-    
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -1110,7 +1108,7 @@ button
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: #757575;
-    transition: transform 250ms ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -1210,6 +1208,9 @@ margin-bottom: 30px;
 
 }
 
+
+
+
 .contract-link
 {
     margin-left: 3px;
@@ -1256,7 +1257,7 @@ margin-bottom: 30px;
     height: 30px;
     padding: 6px;
     border-radius: 50px;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
    
 }
 
@@ -1334,7 +1335,7 @@ overflow: hidden;
     border-radius: 4px;
     border: 1px solid #212121;
     margin-right: 8px;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 
@@ -1342,6 +1343,7 @@ overflow: hidden;
 
 .modal-checkbox:checked ~ .icon-checkbox
 {
+    
     background-color: #2196F3;
     background-image: url(../img/icon-check-white.svg);
     background-size: contain;
@@ -1351,5 +1353,8 @@ overflow: hidden;
 }
 
 
-
+.modal-checkbox:hover ~ .icon-checkbox
+{
+    cursor: pointer;
+}
 
